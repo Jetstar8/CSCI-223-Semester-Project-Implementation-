@@ -73,10 +73,10 @@ class Pathfinder:
 
                     pq.push(new_dist, neighbor)
 
-        return self.reconstruct_path(goal)
+        return self.build_path(goal)
 
 
-    def reconstruct_path(self, goal):
+    def build_path(self, goal):
         path = []
         node = self.graph.nodes[goal]
 
